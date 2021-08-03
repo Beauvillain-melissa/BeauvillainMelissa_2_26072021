@@ -23,7 +23,12 @@ li
  {
 color: blue;
  }
- .deuxieme-p
- {
-     border-collapse:colspan;
- }
+.conteneur
+{
+    justify-content: flex-start;
+}
+.conteneur2
+{
+    display: flex;
+    align-items: stretch;
+}
