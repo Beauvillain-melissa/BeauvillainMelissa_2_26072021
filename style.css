@@ -1,21 +1,29 @@
 .logo-reservia
 {
     float: left;
-    width: 200px;
+    width: 150px;
+    margin: 10px;
 }
 .header
 {
     list-style-type: none;
     display: flex;
-    justify-content: space-around;
     flex-wrap: wrap;
     float:right;
-}    
+}
+li
+{
+    width: 100px;
+}
 .premier-p
 {
     clear:both
 }
-a:visited
-{
-    color: blue
-} 
+ .header a:hover
+ {
+color: blue;
+ }
+ .deuxieme-p
+ {
+     border-collapse:colspan;
+ }
