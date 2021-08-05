@@ -101,9 +101,16 @@ a
 #conteneur-activites
 {
     display: flex;
-    flex-wrap:wrap;
+    margin: 25px;
+    padding: 0;
+    box-shadow: 0px 0px 3px 3px #F2F2F2;
+    border-radius: 20px;
 }
 #conteneur4
 {
     display: flex;
+}
+h4
+{
+    padding-left: 30px;
 }
