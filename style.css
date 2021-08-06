@@ -6,6 +6,21 @@
 {
     max-width: 100%;
     max-height: 40px;
+    width: auto;
+}
+.logo-button {
+    border-radius: 20px;
+    border:lightblue 1px solid;
+    padding : 3px;
+    background-color: lightblue;
+}
+button {
+    background-color: white;
+    border-radius: 3px;
+    border: 2px solid lightblue;
+    /* border: lightblue 1px solid; */
+    padding: 3px;
+    /* border-radius: 20px; */
 }
 .element1-img 
 {
@@ -35,8 +50,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 20px;
+    justify-content: space-between;
 }
 
 .element
@@ -71,23 +85,39 @@
     flex-grow: 1;
     flex-basis: 0;
 }
-
+img { width: 100%; height: auto; }
 .populaires
 {
     max-width: 100%;
     max-height: 100%;
-    border-radius: 30px;
-    flex: auto;
+    min-width: 0;
+    border-radius: 20px 0 0 20px;
+    flex: 1;
+    flex-grow: 1;
 }
 
 .element-populaire {
     max-width: 100%;
     height: auto;
     margin: 10px;
-    padding: 10px;
+    padding: 5px;
     background-color: white;
     border-radius: 30px;
+    width: 80%;
+    display: flex;
+    height: 100px;
 }
+
+.element-populaire p {
+    flex: 1;
+    flex-grow: 2;
+    margin-left: 10px;
+}
+.elem {
+    display: flex;
+    max-width: 100%;
+}
+
 #conteneur-parent
 {
     display: flex;
@@ -142,10 +172,17 @@ h4
     padding-left: 30px;
 }
 #conteneur-footer
-{
-    
+{   display: flex;
+    margin: 25px;
+    padding: 10px;
+    border-radius: 1px 1px 1px 1px;
+    border: grey 0px solid;
+    justify-content: space-around;
+    background-color:#F2F2F2 ;
 }
 .activites
 {
     margin: 0;
 }
+
+
