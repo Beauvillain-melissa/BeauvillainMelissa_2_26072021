@@ -1,3 +1,7 @@
+#conteneur {
+    width: 1100px;
+    margin: 0 auto;
+}
 .logo-reservia
 {
     max-width: 100%;
@@ -22,8 +26,9 @@
  }
 .hebergement
 {
-    max-width: 100%;
-    max-height: 100%;
+    width: 100%;
+    max-height: 50%;
+    border-radius: 20px 20px 0px 0px;
 }
 #conteneur2
 {
@@ -31,16 +36,20 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding: 30px;
+    padding: 20px;
 }
 
 .element
 {
     width:25%;
+    max-height: 150px;
     padding: 5px;
+    margin: 10px;
     border: gray 1px solid;
     border-radius: 30px;
     background-color: white;
+    flex: auto;
+    /* overflow: hidden; */
 }
 
 #conteneur-hebergement
@@ -49,25 +58,40 @@
     border-radius: 20px;
     background-color: #F2F2F2;
     padding: 10px;
-    flex-grow: 1;
+    flex-grow: 2;
+    flex-basis: 0;
 }
 #conteneur-populaires
 {
     border:#F2F2F2 1px solid;
-    border-radius: 20px;
+    border-radius: 30px;
     background-color: #F2F2F2;
-    padding: 10px;
-    margin-left:20px;
+    padding: 5px;
+    margin:10px;
+    flex-grow: 1;
+    flex-basis: 0;
 }
+
 .populaires
 {
     max-width: 100%;
     max-height: 100%;
+    border-radius: 30px;
+    flex: auto;
+}
+
+.element-populaire {
+    max-width: 100%;
+    height: auto;
+    margin: 10px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 30px;
 }
 #conteneur-parent
 {
-    display: grid;
-    grid-template-columns: 65% auto;
+    display: flex;
+    flex-wrap: nowrap;
 }
 body
 {
@@ -99,11 +123,15 @@ a
 }
 #conteneur-activites
 {
-    display: flex;
     margin: 25px;
-    padding: 0;
+    padding: 10px;
     box-shadow: 0px 0px 3px 3px #F2F2F2;
     border-radius: 20px;
+}
+.element-activites {
+    flex: auto;
+    margin: 10px;
+    padding: 10px;
 }
 #conteneur4
 {
@@ -112,4 +140,12 @@ a
 h4
 {
     padding-left: 30px;
+}
+#conteneur-footer
+{
+    
+}
+.activites
+{
+    margin: 0;
 }
