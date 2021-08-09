@@ -2,60 +2,95 @@
     width: 1100px;
     margin: 0 auto;
 }
-.logo-reservia
-{
+
+.logo-reservia {
     max-width: 100%;
     max-height: 40px;
     width: auto;
 }
+.rechercher
+{
+    border-radius: 0px 40px 40px 0px;
+    color: white;
+    background-color: #0065FC;
+}
+.icone5
+{
+    background-color:gray;
+}
 .logo-button {
     border-radius: 20px;
-    border:lightblue 1px solid;
-    padding : 3px;
-    background-color: lightblue;
+    border: #DEEBFF 1px solid;
+    padding: 8px;
+    background-color: #DEEBFF;
+    left: 13px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+
 }
-button {
+
+.button {
+    position: relative;
     background-color: white;
-    border-radius: 3px;
-    border: 2px solid lightblue;
+    border-radius: 20px;
+    /* border: 2px solid lightblue; */
     /* border: lightblue 1px solid; */
-    padding: 3px;
+    padding: 8px;
+    padding-left: 40px;
     /* border-radius: 20px; */
+    border: none;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 10px;
+    transition-duration: 0.4s;
+    cursor: pointer;
 }
-.element1-img 
-{
+
+.button1 {
+    background-color: white;
+    color: black;
+    border: 2px solid #DEEBFF;
+}
+
+.button1:hover {
+    background-color: #0065FC;
+    color: white;
+}
+
+.element1-img {
     flex-grow: 10;
 }
-.icone
-{
+
+.icone {
     color: #0065FC;
-   
 }
-.premier-p
-{
+
+.premier-p {
     clear: both;
 }
- #conteneur-header a:hover
- {
-   color: blue;
- }
-.hebergement
-{
+
+#conteneur-header a:hover {
+    color: blue;
+}
+
+.hebergement {
     width: 100%;
     max-height: 50%;
     border-radius: 20px 20px 0px 0px;
 }
-#conteneur2
-{
+
+#conteneur2 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.element
-{
-    width:25%;
+.element {
+    width: 25%;
     max-height: 150px;
     padding: 5px;
     margin: 10px;
@@ -66,8 +101,7 @@ button {
     /* overflow: hidden; */
 }
 
-#conteneur-hebergement
-{
+#conteneur-hebergement {
     border: #F2F2F2 1px solid;
     border-radius: 20px;
     background-color: #F2F2F2;
@@ -75,19 +109,41 @@ button {
     flex-grow: 2;
     flex-basis: 0;
 }
-#conteneur-populaires
+.icone2
 {
-    border:#F2F2F2 1px solid;
-    border-radius: 30px;
+    color:#0065FC ;
+}
+.icone3
+{
+    color: #F2F2F2;
+}
+.icone4
+{
+    background-color:blue;
+    color: white;
+
+}
+.deuxieme-p
+{
+    padding-left: 20px;
+}
+#conteneur-populaires {
+    border: #F2F2F2 1px solid;
+    border-radius: 20px;
     background-color: #F2F2F2;
     padding: 5px;
-    margin:10px;
+    margin-left: 30px;
     flex-grow: 1;
     flex-basis: 0;
+    ;
 }
-img { width: 100%; height: auto; }
-.populaires
-{
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.populaires {
     max-width: 100%;
     max-height: 100%;
     min-width: 0;
@@ -113,76 +169,106 @@ img { width: 100%; height: auto; }
     flex-grow: 2;
     margin-left: 10px;
 }
+
 .elem {
     display: flex;
     max-width: 100%;
 }
 
-#conteneur-parent
-{
+#conteneur-parent {
     display: flex;
     flex-wrap: nowrap;
 }
-body
+
+body 
 {
     font-family: 'Raleway', sans-serif;
 }
-.element1
-{
+
+.element1 {
     flex-grow: 1;
 }
-#conteneur-header
-{
+
+#conteneur-header {
     display: flex;
     list-style-type: none;
     justify-content: space-between;
 }
-h2
-{
+
+h2 {
     margin: 0;
 }
-a
-{
+
+a {
     color: black;
 }
-.activites
-{
+
+.activites {
     max-height: 100%;
     max-width: 100%;
-    
+    border-radius: 10px 10px 0px 0px;
 }
-#conteneur-activites
-{
+
+#conteneur-activites {
     margin: 25px;
     padding: 10px;
     box-shadow: 0px 0px 3px 3px #F2F2F2;
     border-radius: 20px;
 }
-.element-activites {
+
+.element-activites
+ {
     flex: auto;
     margin: 10px;
     padding: 10px;
+    border-radius: 30px;
+    box-shadow: 1px 1px 0px #F2F2F2;
 }
-#conteneur4
-{
+
+#conteneur4 {
     display: flex;
 }
-h4
-{
-    padding-left: 30px;
+
+h4 {
+    padding-left: 15px;
 }
-#conteneur-footer
-{   display: flex;
+
+#conteneur-footer {
+    display: flex;
     margin: 25px;
     padding: 10px;
     border-radius: 1px 1px 1px 1px;
     border: grey 0px solid;
-    justify-content: space-around;
-    background-color:#F2F2F2 ;
+    justify-content: flex-start;
+    background-color: #F2F2F2;
 }
 .activites
 {
     margin: 0;
 }
+ul
+{
+    list-style: none;
+}
 
+#conteneur-footer a:hover 
+{
+    color: blue;
+}
 
+.element-footer ul
+{
+    padding: 0;
+}
+
+.element-footer
+{
+    width: 30%;
+}
+@media screen and (max-width:600px)
+{
+    #conteneur-parent
+    {
+flex-direction: column;
+    }
+}
