@@ -121,7 +121,10 @@
 {
     background-color:blue;
     color: white;
-
+}
+.icone6
+{
+top:right;
 }
 .deuxieme-p
 {
@@ -265,6 +268,7 @@ ul
 {
     width: 30%;
 }
+
 @media screen and (max-width:600px)
 {
     #conteneur-parent
