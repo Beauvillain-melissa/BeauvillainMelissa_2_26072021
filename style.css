@@ -77,7 +77,7 @@
 .element1-img {
     flex-grow: 10;
 }
-.inscription
+#inscription
 {
     color:#0065FC ;
 }
@@ -157,12 +157,12 @@
 {
     color: lightgray;
 }
-.icone4
+#infologo
 {
-    background-color: #0065FC;
-    color: white;
-    border-radius: 50%;
-    border: solid 1px #d9d9d9;
+    padding : 5px 10px;
+    border-radius: 100%;
+    color: #0065FC;
+    border: solid 1px lightgray;
 }
 .icone6
 {
@@ -186,6 +186,9 @@
 #conteneur3
 {
     padding-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 .trouver-hebergement
 {
@@ -294,9 +297,9 @@ a
  {
     flex: auto;
     margin: 10px;
-    padding: 10px;
+    padding: 0px;
     border-radius: 30px;
-    box-shadow: 1px 1px 0px #F2F2F2;
+    box-shadow: 3px 5px 3px #F2F2F2;
 }
 .image-activite {
     object-fit: cover;
@@ -309,19 +312,19 @@ a
 }
 .image-port
 {
-    height: 400px;
+    height: 430px;
 }
 .image-fort
 {
-    height: 150px;
+    height: 200px;
 }
 .image-frioul
 {
-    height: 120px;
+    height: 155px;
 }
 .image-calanques
 {
-    height: 400px;
+    height: 430px;
 }
 .image-notredame
 {
@@ -329,7 +332,7 @@ a
 }
 .image-longchamp
 {
-    height: 150px;
+    height: 205px;
 }
 .row-activite p {
     font-weight: bold;
@@ -344,10 +347,14 @@ a
 {
    flex: 0;
    margin: 10px;
-   padding: 10px;
+   padding: 0px;
    border-radius: 30px;
-   box-shadow: 1px 1px 0px #F2F2F2;
+   box-shadow: 3px 5px 3px #F2F2F2;
    
+}
+.paragraphe-activites
+{
+    padding-left: 25px;
 }
 .doublecarre
 {
@@ -407,10 +414,195 @@ ul
     display: flex;
     margin: 15px 0px 15px 0px;
 }
+.bouton
+{
+    display: flex;
+}
+.element-apropos
+{
+    margin-bottom: 10px;
+}
 @media screen and (max-width:600px)
 {
+    body {
+        margin : 0;
+    }
+    #conteneur-header a:hover {
+        color:#0065FC;
+        border-bottom: #0065FC 3px solid;
+        border-top: none;
+    }
+
+    #inscription{
+        order: 2;
+        padding-right: 0px;
+    }
+    .trouver-hebergement h2
+    {
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-top: 30px;
+        padding-bottom: 10px;
+    }
+    .texte1
+    {
+        padding-bottom: 20px;
+    }
+    #conteneur-populaires
+    {
+        order: 1;
+        margin: 0px;
+        padding: 15px;
+        border-radius: 0px;
+
+    }
+    .icone6
+    {
+        padding: 0px;
+    }
+    .titreicone
+    {
+        padding: 0px;
+        margin: 0px;
+    }
+    #hebergement
+    {
+        order:3;
+        padding-bottom: 5px;
+        border-bottom: lightgray 3px solid;
+        padding-left: 20px;
+    }
+    #activites
+    {
+        order: 4;
+        padding-bottom: 5px;
+        border-bottom: lightgray 3px solid;
+    }    
+    .element1-img {
+        padding-left: 15px;
+        padding-top: 10px;
+
+    }
     #conteneur-parent
     {
-flex-direction: column;
+        flex-direction: column;
+        margin: 0;
+    }
+    #conteneur-hebergement
+    {
+        order: 2;
+        padding: 0;
+        margin-right: 0px;
+        background-color: white; 
+    }
+    #conteneur-header
+    {
+        flex-wrap: wrap;
+    }
+    .element1
+    {
+        width: 43%;
+        max-width: 43%;
+        padding: 20px 10px;
+    }
+    .bouton
+    {
+        flex-direction: column;
+    }
+    .button1
+    {
+        width: fit-content;
+    }
+    .element-populaire {
+        margin : 0;
+        width: 100%;
+        margin-bottom: 15px
+    }
+    #conteneur2
+    {
+        flex-direction: column;
+    }
+    .element 
+    {
+        max-width: 100%;
+    }
+    .populaires
+    {
+        flex-grow: 1.6;
+    }
+    .texte-populaire
+    {
+        margin-left: 20px;
+        margin-right: 35px;
+        padding-top: 10px;
+    }
+    .blockicone
+    {
+        margin-top: 20px;
+        padding-bottom: 15px;
+        padding-left: 0px;
+
+    }
+    .hebergement
+    {
+        height: 130px;
+    }
+    .paragraphe-hebergement
+    {
+        padding-left: 15px;
+
+    }
+    .blocsicone2
+    {
+        padding-left: 14px;
+        padding-top: 8px;
+
+    }
+    #titre-hebergement
+    {
+        padding-left: 0px;
+    }
+    .deuxieme-p
+    {
+        padding-left: 35px;
+        margin-top: 10px;
+        padding-top: 0px;
+    }
+    #conteneur4
+    {
+        flex-direction: column;
+    }
+    .image-activite
+    {
+        height: 120px;
+    }
+    .element-activites
+    {
+        width: 300px;
+    }
+    .souselement-activites
+    {
+        width:300px ;
+    }
+    #conteneur-footer
+    {
+    flex-direction: column;
+    }
+    .element-footer
+    {
+        width: 100%;
+    }
+    .element-apropos
+    {
+        margin-bottom: 0;
+
+    }
+    #conteneur-activites h4 
+    {
+        padding-left: 15px;
+    }
+    .deuxieme-p
+    {
+        padding-left: 15px;
     }
 }
