@@ -3,6 +3,15 @@
     margin: 0 auto;
 }
 
+a:link {
+    text-decoration: none;
+}
+
+#hebergement {
+    color:#0065FC;
+    border-top: #0065FC 1px solid;
+}
+
 .logo-reservia 
 {
     max-width: 100%;
@@ -27,9 +36,17 @@
 }
 .icone5
 {
-    background-color:#F2F2F2;
-    padding: 10px;
+    /* background-color:#F2F2F2; */
+}
+.maps
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 15px;
+    background-color: lightgray;
     border-radius: 10px 0px 0px 10px;
+
 }
 .logo-button {
     border-radius: 20px;
@@ -334,6 +351,7 @@ a
 {
     height: 205px;
 }
+
 .row-activite p {
     font-weight: bold;
 }
@@ -422,7 +440,17 @@ ul
 {
     margin-bottom: 10px;
 }
-@media screen and (max-width:600px)
+.flitre
+{
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+}
+#loop
+{
+    display: none;
+}
+@media screen and (max-width:767px)
 {
     body {
         margin : 0;
@@ -469,7 +497,9 @@ ul
     {
         order:3;
         padding-bottom: 5px;
-        border-bottom: lightgray 3px solid;
+        border-bottom: #0065FC 3px solid;
+        color:#0065FC;
+        border-top: none;
         padding-left: 20px;
     }
     #activites
@@ -512,6 +542,7 @@ ul
     .button1
     {
         width: fit-content;
+        border: 2px solid #F2F2F2;
     }
     .element-populaire {
         margin : 0;
@@ -603,6 +634,104 @@ ul
     }
     .deuxieme-p
     {
-        padding-left: 15px;
+        padding-left: 45px;
+    }
+    .flitre
+    {
+        justify-content: flex-start;
+    }
+    #infologo
+    {
+        margin-right: 5px;
+        float: left;
+    }
+    #rechercheloop
+    {
+        display: none;
+    }
+    #loop
+    {
+        display:block;
+        padding: 10px;
+    }
+    .rechercher
+    {
+        border-radius: 15px 15px 15px 15px;
+        position: relative;
+        right:10px;
+    }
+    #row-economique{
+        display: flex;
+        flex: 1;
+    }
+    #row-economique button{
+        margin-right: 0;
+    }
+    #icone-famillial {
+        padding-left: 4px;
+        padding-right: 4px;
+    }
+
+}
+
+@media only screen and (max-width: 992px) and (min-width: 768px) 
+{
+    #conteneur-parent
+    {
+        flex-direction: column;
+    }
+    .hebergement
+    {
+        max-width: none;
+        max-height: none;
+        height: 130px;
+    }
+    .element
+    {
+        max-width: none;
+    }
+    #conteneur-populaires
+    {
+        margin: 0px;
+        border: none;
+        border-radius: 0px;
+        background-color: white;
+    }
+    #conteneur-hebergement
+    {
+        margin: 0px;
+        border-radius: 0px;
+
+    }
+    .activites
+    {
+        margin-left: 25px;
+    }
+    #row-economique
+    {
+        display: flex;
+        
+    }
+    .flitre
+    {
+        padding-top: 10px;
+    }
+    .button
+    {
+        padding: 4px;
+        padding-left: 2rem;
+    }
+    .bouton
+    {
+        display: flex;
+       
+    }
+    
+    .element1-img {
+        flex-grow: 5;
+    }
+
+    .element1 {
+        max-width: 15%;
     }
 }
