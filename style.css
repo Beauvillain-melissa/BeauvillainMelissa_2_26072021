@@ -9,6 +9,10 @@
     left: 10px;
     padding-left: 10px;
 }
+.blocsicone2
+{
+    padding-left: 10px;
+}
 a:link {
     text-decoration: none;
 }
@@ -304,6 +308,7 @@ a
 {
     color: black;
 }
+
 .activites {
     max-height: 100%;
     max-width: 100%;
@@ -311,8 +316,8 @@ a
 }
 #conteneur-activites 
 {
-    margin: 25px;
-    padding: 10px;
+    margin: 0px;
+    padding: 0px;
     border-radius: 20px;
 }
 .element-activites
@@ -360,11 +365,13 @@ a
 .row-activite p {
     font-weight: bold;
 }
+
 .row-activite 
 {
     display: flex;
     flex-direction:column;
     flex: 1;
+    justify-content: space-between;
 }
 .souselement-activites
 {
@@ -406,11 +413,11 @@ a
     border: grey 0px solid;
     justify-content: flex-start;
     background-color: #F2F2F2;
-    margin-left: 10px;
+    margin-left: 0px;
 }
 .activites
 {
-    margin: 0;
+    margin-left: 20px;
 }
 ul
 {
@@ -593,7 +600,7 @@ ul
     }
     .blocsicone2
     {
-        padding-left: 14px;
+        padding-left: 5px;
         padding-top: 8px;
 
     }
