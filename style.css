@@ -6,12 +6,6 @@
 {
     position:absolute;
     bottom: 10px;
-    left: 10px;
-    padding-left: 10px;
-}
-.blocsicone2
-{
-    padding-left: 10px;
 }
 a:link {
     text-decoration: none;
@@ -123,61 +117,78 @@ a:link {
     border-top: #0065FC 1px solid;
 }
 
-.hebergement {
-    object-fit: cover;
-    object-position: center;
-    height: 7vw;
-    width: 100%;
-    max-width: 100%;
-    max-height: 100%;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-}
-
 #titre-hebergement 
 {
-    margin: 10px;
-    padding-left: 20px;
+    margin-bottom: 20px;
 }
 
 #conteneur2 {
     display: flex;
     
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .element {
-    
     box-shadow: 0 0 16px #0000002e;
-    padding: 5px 5px 10px 5px;
-    margin: 15px;
-    
+    padding: 5px;
+    margin-bottom: 15px;
     border-radius: 15px;
     background-color: white;
-    flex: 1 0 26%;
-    max-width: 26%;
+    flex: 1 0 30%;
+    max-width: 30%;
     object-fit: cover;
     object-position: center;
+    height: 200px;
+}
+.conteneur-element
+{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .paragraphe-hebergement
 {
     margin: 0;
     padding-left: 10px;
+    flex: 1;
+    flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
 
+.hebergement {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    height: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
-.element p 
+
+.img-hebergement-conteneur
 {
-    margin : 5px 0 5px 0;
+    flex-grow: 3;
+    flex-basis: 0;
+    min-height: 0;
 }
+
 #conteneur-hebergement {
     border: #F2F2F2 1px solid;
     border-radius: 20px;
     background-color: #F2F2F2;
-    padding: 25px;
+    padding: 35px;
     flex-grow: 2;
     flex-basis: 0;
-    margin-right: 20px;
+    margin-right: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .icone2
 {
@@ -197,25 +208,18 @@ a:link {
 .icone6
 {
     float: right;
-    padding-right:45px ;
-}
-.deuxieme-p
-{
-    padding: 35px 0px 0px 35px;
 }
 #conteneur-populaires {
     border: #F2F2F2 1px solid;
     border-radius: 10px;
     background-color: #F2F2F2;
-    padding: 10px;
-    margin-left: 30px;
+    padding: 35px;
     flex-grow: 1;
     flex-basis: 0;
     ;
 }
 #conteneur3
 {
-    padding-top: 15px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -249,14 +253,11 @@ img {
 {
     
     height: 100%;
-    margin: 10px 10px 25px 25px;
-    margin-bottom: 35px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 10px auto 25px auto;
     padding: 5px;
     background-color: white;
     border-radius: 30px;
-    width: 80%;
+    width: 100%;
     display: flex;
     height: 127px;
 }
@@ -309,16 +310,9 @@ a
     color: black;
 }
 
-.activites {
-    max-height: 100%;
-    max-width: 100%;
-    border-radius: 10px 10px 0px 0px;
-}
 #conteneur-activites 
 {
-    margin: 0px;
-    padding: 0px;
-    border-radius: 20px;
+    margin-bottom: 40px;
 }
 .element-activites
  {
@@ -402,8 +396,7 @@ a
 }
 .titreicone 
 {
-    padding-left: 35px;
-    margin: 20px 10px 20px 10px;
+    margin-bottom: 10px;
 }
 #conteneur-footer {
     display: flex;
@@ -418,6 +411,7 @@ a
 .activites
 {
     margin-left: 20px;
+    margin-top: 50px;
 }
 ul
 {
@@ -432,12 +426,11 @@ ul
 .element-footer ul
 {
     padding-left: 40px;
-    
 }
 
 .element-footer
 {
-    width: 30%;
+    flex: 1;
 }
 .conteneur-recherche
 {
@@ -451,6 +444,10 @@ ul
 .element-apropos
 {
     margin-bottom: 10px;
+}
+.element-apropos a
+{
+    text-decoration: none;
 }
 .flitre
 {
@@ -466,6 +463,14 @@ ul
 }
 @media screen and (max-width:767px)
 {
+    h5
+    {
+        padding-left: 0px;   
+    }
+    .element-footer ul
+    {
+        padding-left: 0px;
+    }
     body {
         margin : 0;
     }
@@ -494,19 +499,14 @@ ul
     {
         order: 1;
         margin: 0px;
-        padding: 15px;
+        padding: 20px;
         border-radius: 0px;
 
     }
-    .icone6
-    {
-        padding: 0px;
-    }
     .titreicone
     {
-        padding: 0px;
-        margin: 0px;
-        padding-top: 10px;
+        margin-bottom: 25px;
+        margin-top: 10px;
     }
     #hebergement
     {
@@ -516,6 +516,15 @@ ul
         color:#0065FC;
         border-top: none;
         padding-left: 20px;
+    }
+    .img-hebergement-conteneur {
+        flex-basis: auto;
+    }
+    .blocsicone2 {
+        margin : 5px 0px;
+    }
+    .nom-herbergement{
+        margin: 5px 0px;
     }
     #activites
     {
@@ -536,9 +545,9 @@ ul
     #conteneur-hebergement
     {
         order: 2;
-        padding: 0;
         margin-right: 0px;
         background-color: white; 
+        padding: 20px;
     }
     #conteneur-header
     {
@@ -585,35 +594,14 @@ ul
     .blockicone
     {
         margin-top: 20px;
-        padding-bottom: 15px;
-        padding-left: 0px;
-
     }
     .hebergement
     {
         height: 130px;
     }
-    .paragraphe-hebergement
-    {
-        padding-left: 15px;
-
-    }
-    .blocsicone2
-    {
-        padding-left: 5px;
-        padding-top: 8px;
-
-    }
-    #titre-hebergement
-    {
-        padding-left: 0px;
-        padding-top: 15px;
-    }
     .deuxieme-p
     {
-        padding-left: 35px;
-        margin-top: 10px;
-        padding-top: 0px;
+        /* margin-top: 10px; */
     }
     #conteneur4
     {
@@ -625,19 +613,21 @@ ul
     }
     .element-activites
     {
-        width: 300px;
+        width: 100%;
     }
     .souselement-activites
     {
-        width:300px ;
+        width: 100% ;
     }
     #conteneur-footer
     {
-    flex-direction: column;
+        flex-direction: column;
+        margin-top: 30px;
     }
     .element-footer
     {
         width: 100%;
+        margin-left: 20px;
     }
     .element-apropos
     {
@@ -650,11 +640,12 @@ ul
     }
     #conteneur-activites
     {
-        margin: 0px;
+        padding: 20px;
     }
     .deuxieme-p
     {
-        padding-left: 25px;
+        margin-left: 20px;
+        margin-top: 15px;
     }
     .flitre
     {
@@ -691,6 +682,10 @@ ul
         padding-left: 4px;
         padding-right: 4px;
     }
+    .activites
+    {
+        margin-top: 0px;
+    }
 
 }
 
@@ -704,11 +699,6 @@ ul
     {
         max-width: none;
         max-height: none;
-        height: 130px;
-    }
-    .element
-    {
-        max-width: none;
     }
     #conteneur-populaires
     {
