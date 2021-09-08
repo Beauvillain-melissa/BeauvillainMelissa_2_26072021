@@ -39,10 +39,6 @@ a:link {
     padding: 10px;
 
 }
-.icone5
-{
-    /* background-color:#F2F2F2; */
-}
 .maps
 {
     display: flex;
@@ -190,11 +186,11 @@ a:link {
     flex-direction: column;
     justify-content: space-between;
 }
-.icone2
+.icone-plein
 {
     color:#0065FC ;
 }
-.icone3
+.icone-vide
 {
     color: lightgray;
 }
@@ -221,8 +217,9 @@ a:link {
 #conteneur3
 {
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     justify-content: space-evenly;
+    flex-direction: column;
 }
 .trouver-hebergement
 {
@@ -297,13 +294,9 @@ body
     list-style-type: none;
     justify-content: space-between;
 }
-h2 
+h1 
 {
     margin: 0;
-}
-h3
-{
- padding-left: 40px;   
 }
 a 
 {
@@ -408,6 +401,9 @@ a
     background-color: #F2F2F2;
     margin-left: 0px;
 }
+h3{
+    padding-left:40px ;
+}
 .activites
 {
     margin-left: 20px;
@@ -463,9 +459,9 @@ ul
 }
 @media screen and (max-width:767px)
 {
-    h5
+    h3
     {
-        padding-left: 0px;   
+        padding: 0px;
     }
     .element-footer ul
     {
@@ -515,12 +511,11 @@ ul
         border-bottom: #0065FC 3px solid;
         color:#0065FC;
         border-top: none;
-        padding-left: 20px;
     }
     .img-hebergement-conteneur {
         flex-basis: auto;
     }
-    .blocsicone2 {
+    .bloc-etoile {
         margin : 5px 0px;
     }
     .nom-herbergement{
@@ -568,10 +563,12 @@ ul
         width: fit-content;
         border: 2px solid #F2F2F2;
     }
-    .element-populaire {
+    .element-populaire 
+    {
         margin : 0;
         width: 100%;
         margin-bottom: 15px
+        
     }
     #conteneur2
     {
@@ -590,6 +587,7 @@ ul
         margin-left: 20px;
         margin-right: 35px;
         padding-top: 10px;
+        font-size: 15px;
     }
     .blockicone
     {
@@ -598,10 +596,6 @@ ul
     .hebergement
     {
         height: 130px;
-    }
-    .deuxieme-p
-    {
-        /* margin-top: 10px; */
     }
     #conteneur4
     {
@@ -689,7 +683,7 @@ ul
 
 }
 
-@media only screen and (max-width: 992px) and (min-width: 768px) 
+@media only screen and (max-width: 1024px) and (min-width: 768px) 
 {
     #conteneur-parent
     {
@@ -743,5 +737,28 @@ ul
 
     .element1 {
         max-width: 15%;
+    }
+    .paragraphe-activites
+    {
+        height: 30px;
+    }
+    .image-fort
+    {
+        height: 190px;
+    }
+
+    .image-frioul
+    {
+        height: 145px;
+    }
+
+    .image-longchamp
+    {
+        height: 195px;
+    }
+
+    .image-notredame
+    {
+        height: 140px;
     }
 }
